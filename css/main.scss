@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+:root {
+  --card0: translateX(0vw) scale(1);
+  --card1: translateX(0vw) scale(1.2);
+  --card2: translateX(0vw) scale(1);
+  --src0: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url('/Project/images/fishing.jpg');
+  --src1: linear-gradient(rgba(29, 38, 113, 0.3), rgba(195, 55, 100, 0.3)), url('/Project/images/girl.jpg');
+  --src2: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url('/Project/images/rasp.jpg');
+}
+
+body {
+  margin: 0px;
+  background: rgb(255,170,0);
+  background: linear-gradient(135deg, #ffaa00 0%, #ff6600 100%);
+}
+
+// body * {
+//   border: 1px solid black;
+// }
+
+h1 {
+  font-family: 'Bebas Neue Cyrillic';
+}
+
+.block {
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#hero {
+  color: white;
+  height: 100vh;
+  flex-direction: column;
+  display: flex;
+
+  nav {
+    flex: 1;
+    margin: auto;
+    display: flex;
+    font-size: 1.5em;
+
+    h1 {
+      flex: 2;
+      font-family: 'Crawley';
+      font-weight: 400;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    span {
+      flex: 2;
+    }
+
+    div {
+      flex: 4;
+      display: flex;
+      font-family: 'Bebas Neue Cyrillic';
+
+      * {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    @media (min-width: 1600px) {
+      width: 60vw;
+
+      a {
+        font-size: 1.2em;
+      }
+
+      h1 {
+        font-size: 2.2em;
+      }
+    }
+    @media (min-width: 960px) and (max-width: 1599px) {
+      width: 70vw;
+
+      a {
+        font-size: 1.1em;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 959px) {
+      width: 80vw;
+
+      a {
+        font-size: 1em;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media (max-width: 767px) {
+      width: 90vw;
+
+      h1 {
+        font-size: 2em;
+      }
+
+      div {
+        flex: 2;
+      }
+
+      div * {
+        display: none;
+      }
+
+      span {
+        flex: 0;
+      }
+    }
+  }
+
+  .middle {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .carousel {
+      display: flex;
+
+      .card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s;
+        border-radius: 3em;
+        padding: 2em;
+        cursor: pointer;
+        font-family: 'Merriweather';
+        box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.25);
+
+        .upper {
+          flex: 1;
+
+          h2 {
+            font-family: 'Bebas Neue Cyrillic';
+            font-size: 3em;
+            margin: 0px;
+          }
+  
+          h4 {
+            margin: 0.5em 0em;
+          }
+        }
+
+        .form {
+          display: flex;
+          
+          p {
+            flex: 4;
+            margin: 0px;
+          }
+
+          .btn {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+
+            button {
+              background-color: white;
+              color: #ff6600;
+              border: none;
+              font-size: 1.2em;
+              padding: 0.5em 1em;
+              border-radius: 0.7em;
+              font-family: 'Bebas Neue Cyrillic';
+            }
+          }
+        }
+      }
+
+      #card0 {
+        transform: var(--card0);
+        background: var(--src0);
+        background-position: center;
+        background-size: cover;
+      }
+      
+      #card1 {
+        transform: var(--card1);
+        background: var(--src1);
+        background-position: center;
+        background-size: cover;
+      }
+      
+      #card2 {
+        transform: var(--card2);
+        background: var(--src2);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
+    @media (min-width: 1600px) {
+      width: 120vw;
+      transform: translateX(-10vw);
+
+      .card {
+        margin: 5vw;
+        height: 40vh;
+      }
+    }
+    @media (min-width: 960px) and (max-width: 1599px) {
+      width: 150vw;
+      transform: translateX(-25vw);
+
+      .card {
+        margin: 7vw;
+        height: 43vh;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 959px) {
+      width: 180vw;
+      transform: translateX(-40vw);
+
+      .card {
+        margin: 9vw;
+        height: 46vh;
+      }
+    }
+    @media (max-width: 767px) {
+      width: 210vw;
+      transform: translateX(-55vw);
+
+      .card {
+        margin: 5vw;
+        height: 49vh;
+        
+        .form {
+          flex-direction: column;
+
+          p {
+            font-size: 0.8em;
+          }
+        }
+      }
+    }
+  }
+}
+
+#news {
+  background-color: white;
+}

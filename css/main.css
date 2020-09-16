@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+:root {
+  --card0: translateX(0vw) scale(1);
+  --card1: translateX(0vw) scale(1.2);
+  --card2: translateX(0vw) scale(1);
+  --src0: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url('/Project/images/fishing.jpg');
+  --src1: linear-gradient(rgba(29, 38, 113, 0.3), rgba(195, 55, 100, 0.3)), url('/Project/images/girl.jpg');
+  --src2: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url('/Project/images/rasp.jpg');
+}
+
+body {
+  margin: 0px;
+  background: #ffaa00;
+  background: linear-gradient(135deg, #ffaa00 0%, #ff6600 100%);
+}
+
+h1 {
+  font-family: 'Bebas Neue Cyrillic';
+}
+
+.block {
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+#hero {
+  color: white;
+  height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#hero nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5em;
+}
+
+#hero nav h1 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-family: 'Crawley';
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero nav span {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+#hero nav div {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Bebas Neue Cyrillic';
+}
+
+#hero nav div * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1600px) {
+  #hero nav {
+    width: 60vw;
+  }
+  #hero nav a {
+    font-size: 1.2em;
+  }
+  #hero nav h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1599px) {
+  #hero nav {
+    width: 70vw;
+  }
+  #hero nav a {
+    font-size: 1.1em;
+  }
+  #hero nav h1 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  #hero nav {
+    width: 80vw;
+  }
+  #hero nav a {
+    font-size: 1em;
+  }
+  #hero nav h1 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 767px) {
+  #hero nav {
+    width: 90vw;
+  }
+  #hero nav h1 {
+    font-size: 2em;
+  }
+  #hero nav div {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  #hero nav div * {
+    display: none;
+  }
+  #hero nav span {
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+  }
+}
+
+#hero .middle {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero .middle .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#hero .middle .carousel .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 3em;
+  padding: 2em;
+  cursor: pointer;
+  font-family: 'Merriweather';
+  -webkit-box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.25);
+          box-shadow: 0px 0px 25px 0px rgba(50, 50, 50, 0.25);
+}
+
+#hero .middle .carousel .card .upper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+#hero .middle .carousel .card .upper h2 {
+  font-family: 'Bebas Neue Cyrillic';
+  font-size: 3em;
+  margin: 0px;
+}
+
+#hero .middle .carousel .card .upper h4 {
+  margin: 0.5em 0em;
+}
+
+#hero .middle .carousel .card .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#hero .middle .carousel .card .form p {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  margin: 0px;
+}
+
+#hero .middle .carousel .card .form .btn {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#hero .middle .carousel .card .form .btn button {
+  background-color: white;
+  color: #ff6600;
+  border: none;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border-radius: 0.7em;
+  font-family: 'Bebas Neue Cyrillic';
+}
+
+#hero .middle .carousel #card0 {
+  -webkit-transform: var(--card0);
+          transform: var(--card0);
+  background: var(--src0);
+  background-position: center;
+  background-size: cover;
+}
+
+#hero .middle .carousel #card1 {
+  -webkit-transform: var(--card1);
+          transform: var(--card1);
+  background: var(--src1);
+  background-position: center;
+  background-size: cover;
+}
+
+#hero .middle .carousel #card2 {
+  -webkit-transform: var(--card2);
+          transform: var(--card2);
+  background: var(--src2);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 1600px) {
+  #hero .middle {
+    width: 120vw;
+    -webkit-transform: translateX(-10vw);
+            transform: translateX(-10vw);
+  }
+  #hero .middle .card {
+    margin: 5vw;
+    height: 40vh;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1599px) {
+  #hero .middle {
+    width: 150vw;
+    -webkit-transform: translateX(-25vw);
+            transform: translateX(-25vw);
+  }
+  #hero .middle .card {
+    margin: 7vw;
+    height: 43vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  #hero .middle {
+    width: 180vw;
+    -webkit-transform: translateX(-40vw);
+            transform: translateX(-40vw);
+  }
+  #hero .middle .card {
+    margin: 9vw;
+    height: 46vh;
+  }
+}
+
+@media (max-width: 767px) {
+  #hero .middle {
+    width: 210vw;
+    -webkit-transform: translateX(-55vw);
+            transform: translateX(-55vw);
+  }
+  #hero .middle .card {
+    margin: 5vw;
+    height: 49vh;
+  }
+  #hero .middle .card .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #hero .middle .card .form p {
+    font-size: 0.8em;
+  }
+}
+
+#news {
+  background-color: white;
+}
+/*# sourceMappingURL=main.css.map */
